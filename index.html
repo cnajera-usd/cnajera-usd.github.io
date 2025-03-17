@@ -133,7 +133,7 @@
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
           
-            <img src="" alt="Image of your project" class="img-fluid">
+            <img src="images/Birthday Paradox Simulation.jpg" alt="OutPut of Code Being rRan" class="img-fluid">
           
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
@@ -150,10 +150,50 @@
               </p>
               <p>
               Functional Requirements
+              <ul>
+                <li>Generates random birthdays while ensuring validity (Example: no February 30th).</li>
+                <li>Simulates groups of 5 to 100 people in increments of 5.</li>
+                <li>Runs 20 trials per group size to compute the probability of shared birthdays.</li>
+                <li>Uses a single Random object to ensure consistent seeding.</li>
+                <li>Outputs results in a structured table format.</li>
+            </ul>
               </p>
+              <p><strong>Implementation Details (My Contribution)</strong></p>
               <p>
-              Implementation
+                  In this project, I was responsible for:
+                  <ul>
+                      <li>
+                          Implementing the Experiment.java class, which runs multiple trials to determine 
+                          the probability of duplicate birthdays within a group.
+                      </li>
+                      <li>
+                          Developing the Trial.java class to simulate individual birthday matching scenarios.
+                          This class generates random birthdays and checks for duplicates.
+                      </li>
+                      <li>
+                          Writing unit tests in TrialTest.java using JUnit and Mockito 
+                          to verify that trials correctly detect duplicate birthdays and generate the expected number of birthdays.
+                      </li>
+                      <li>
+                          Applying test-driven development to verify that the simulation logic 
+                          worked as expected before implementation.
+                      </li>
+                  </ul>
               </p>
+
+              <p>
+                This project helped me improve my Java coding in many ways. In particular I was able to practice and get more comfortable with Test Driven development.
+                I was able to get tons of practice with testing, such as writing Unit tests and Mocking them. This process also improved my debugging skills along with getting comfortable
+                using Github with partners to improve code.
+              </p>
+
+              <p>
+                Check out the full project on Github:
+
+                <a href="https://github.com/usd-comp-305/project-01-jack-and-chris/tree/main "></a>
+
+              </p>
+                            
 
 
             </div>
