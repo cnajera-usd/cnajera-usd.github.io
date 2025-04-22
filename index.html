@@ -130,160 +130,124 @@
             <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Projects</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-          
-            <img src="images/Birthday Paradox Simulation.jpg" alt="OutPut of Code Being Ran" class="img-fluid">
+        <!-- PROJECT 1: Birthday Paradox -->
+<div class="row mb-5">
+  <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+    <img src="images/Birthday Paradox Simulation.jpg" alt="OutPut of Code Being Ran" class="img-fluid mb-3">
+    <img src="images/Trial.java Screenshot.jpg" alt="Trial.java File" class="img-fluid mb-3">
+    <img src="images/Experiment.Java Screenshot.jpg" alt="Experiment.java File" class="img-fluid">
+  </div>
+  <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+    <div class="mb-4">
+      <h3>Birthday Paradox Simulation</h3>
+      <p>
+        What is the Birthday Paradox? The Birthday Paradox is a well-known probability problem that states if you have a group of 23 people, there is a 50% chance
+        that two of them will share the same birthday.
+      </p>
+      <p>
+        What does this project do? This project simulates the Birthday paradox by randomly generating birthdays for different group sizes, ranging from 5 to 100 people in increments of 5.
+        Each group undergoes 20 trials, and the program calculates the percentage of trials where at least two people share the same birthday.
+        The results are displayed to show how the probability increases as the group size grows.
+      </p>
+      <p>Functional Requirements</p>
+      <ul>
+        <li>Generates random birthdays while ensuring validity (Example: no February 30th).</li>
+        <li>Simulates groups of 5 to 100 people in increments of 5.</li>
+        <li>Runs 20 trials per group size to compute the probability of shared birthdays.</li>
+        <li>Uses a single Random object to ensure consistent seeding.</li>
+        <li>Outputs results in a structured table format.</li>
+      </ul>
+      <p><strong>Implementation Details (My Contribution)</strong></p>
+      <ul>
+        <li>Implemented the Experiment.java class for trial control and statistics gathering.</li>
+        <li>Developed the Trial.java class to simulate individual birthday matching.</li>
+        <li>Wrote unit tests in TrialTest.java using JUnit and Mockito.</li>
+        <li>Used test-driven development to ensure correctness before implementation.</li>
+      </ul>
+      <p>
+        This project helped me improve my Java coding and debugging skills, and become more confident in using JUnit and GitHub for team collaboration.
+      </p>
+      <p>
+        Check out the full project on GitHub:  
+        <a href="https://github.com/usd-comp-305/project-01-jack-and-chris/tree/main">GitHub Repo</a>
+      </p>
+    </div>
+  </div>
+</div>
 
-            <img src="images/Trial.java Screenshot.jpg" alt="Trial.java File" class="img-fluid">
+<!-- PROJECT 2: Elevator Simulation -->
+<div class="row mb-5">
+  <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+    <img src="images/BuildingClass1.jpg" alt="Building Class Code" class="img-fluid mb-3">
+    <img src="images/BuildingClass2.jpg" alt="Building Class Code Pt.2" class="img-fluid mb-3">
+    <img src="images/BuildingClass3.jpg" alt="Building Class Code Pt.3" class="img-fluid">
+  </div>
+  <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+    <div class="mb-4">
+      <h3>Elevator Simulation Project</h3>
+      <p><strong>Project Title:</strong> Elevator Simulator</p>
+      <p>
+        This project simulates multiple types of elevators servicing a building. Types include Standard, Freight, Penthouse, and Express elevators, each with distinct logic.
+        The simulation runs in rounds, assigning calls and moving elevators floor by floor using two scheduling algorithms.
+      </p>
 
-            <img src="images/Experiment.Java Screenshot.jpg" alt="Experiment.java File" class="img-fluid">
-          
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <h3>Birthday Paradox Simulation</h3>
-              <p>
-               What is the Birthday Paradox? The Birthday Paradox is a well know probability problem that states if you have a group of 23 people, there is a 50% chance
-               that two of them will share the same birthday.
-              </p>
-              <p>
-              What does this project do? This project simulates the Birthday paradox by randomly generating birthdays for different group sizes, ranging from 5 to 100 people in increments of 5.
-              Each group undergoes 20 trials, and the program calculates the percentage of trial where at least two people share the same birthday. The results are displayed showing how the
-              probability increases as the group size grows.
-              </p>
-              <p>
-              Functional Requirements
-              <ul>
-                <li>Generates random birthdays while ensuring validity (Example: no February 30th).</li>
-                <li>Simulates groups of 5 to 100 people in increments of 5.</li>
-                <li>Runs 20 trials per group size to compute the probability of shared birthdays.</li>
-                <li>Uses a single Random object to ensure consistent seeding.</li>
-                <li>Outputs results in a structured table format.</li>
-            </ul>
-              </p>
-              <p><strong>Implementation Details (My Contribution)</strong></p>
-              <p>
-                  In this project, I was responsible for:
-                  <ul>
-                      <li>
-                          Implementing the Experiment.java class, which runs multiple trials to determine 
-                          the probability of duplicate birthdays within a group.
-                      </li>
-                      <li>
-                          Developing the Trial.java class to simulate individual birthday matching scenarios.
-                          This class generates random birthdays and checks for duplicates.
-                      </li>
-                      <li>
-                          Writing unit tests in TrialTest.java using JUnit and Mockito 
-                          to verify that trials correctly detect duplicate birthdays and generate the expected number of birthdays.
-                      </li>
-                      <li>
-                          Applying test-driven development to verify that the simulation logic 
-                          worked as expected before implementation.
-                      </li>
-                  </ul>
-              </p>
+      <p><strong>Functional Requirements:</strong></p>
+      <ul>
+        <li><strong>Basic Simulator Mechanics:</strong>
+          <ul>
+            <li>Loads calls from a file.</li>
+            <li>Creates elevators with proper types and quantities.</li>
+            <li>Assigns calls to elevators using the Scheduler.</li>
+            <li>Moves elevators one floor per round.</li>
+          </ul>
+        </li>
+        <li><strong>Correct Call Assignment:</strong>
+          <ul>
+            <li>Follows algorithmic logic (Simple or Complex).</li>
+            <li>Respects elevator type constraints.</li>
+          </ul>
+        </li>
+        <li><strong>Elevator Call Processing:</strong>
+          <ul>
+            <li>Pickups at start floor, drops off at destination.</li>
+            <li>Tracks call completion.</li>
+          </ul>
+        </li>
+        <li><strong>Termination Condition:</strong>
+          <ul>
+            <li>All calls must complete and elevators return to ground floor.</li>
+          </ul>
+        </li>
+        <li><strong>Output Accuracy:</strong>
+          <ul>
+            <li>Shows current elevator status.</li>
+            <li>Displays pending and completed calls clearly.</li>
+          </ul>
+        </li>
+      </ul>
 
-              <p>
-                This project helped me improve my Java coding in many ways. In particular I was able to practice and get more comfortable with Test Driven development.
-                I was able to get tons of practice with testing, such as writing Unit tests and Mocking them. This process also improved my debugging skills along with getting comfortable
-                using Github with partners to improve code.
-              </p>
+      <p><strong>Implementation Details (My Contribution)</strong></p>
+      <ul>
+        <li>Built the <code>Simulator</code> core class to manage the flow and ending condition.</li>
+        <li>Implemented <code>ComplexScheduler</code> and <code>SimpleScheduler</code> for dispatching.</li>
+        <li>Wrote the <code>Building</code> class to manage elevator list and call assignment.</li>
+        <li>Worked on the <code>Call</code> class to represent individual elevator requests.</li>
+        <li>Used test-driven development and GitHub-based pair programming.</li>
+      </ul>
 
-              <p>
-                Check out the full project on Github:
+      <p><strong>What I Learned:</strong></p>
+      <p>
+        This project deepened my understanding of TDD, Java design, and collaborative Git workflows. It gave me confidence in writing large simulations and debugging with a partner.
+      </p>
 
-                <a href="https://github.com/usd-comp-305/project-01-jack-and-chris/tree/main "></a>
+      <p>
+        Check out the full project on GitHub:  
+        <a href="https://github.com/usd-comp-305/project-03-elevator-sim">GitHub Repo</a>
+      </p>
+    </div>
+  </div>
+</div>
 
-              </p>
-                
-
-  
-              <div class="container mt-5">
-                <div class="row">
-                  
-                
-                  <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-                    <img src="images/BuildingClass1.jpg" alt="Building Class Code" class="img-fluid">
-                    <img src="images/BuildingClass2.jpg" alt="Building Class Code Pt.2" class="img-fluid">
-                    <img src="images/BuildingClass3.jpg" alt="Building Class Code Pt.3" class="img-fluid">
-                  </div>
-              
-                  
-                  <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-                    <div class="mb-4">
-                      <h3>Elevator Simulation Project</h3>
-              
-                      <p><strong>Project Title:</strong> Elevator Simulator</p>
-              
-                      <p>
-                        This project involves building an elevator simulation system that models multiple types of elevators servicing a building with varying rules.
-                        The different types of elevators that were implemented were Standard, Freight, Penthouse, and Express, each with its own movement and call behavior.
-                        The simulation operates through rounds, where a scheduler assigns elevator calls, and elevators move one floor per round based on their logic.
-                      </p>
-              
-                      <p><strong>Functional Requirements:</strong></p>
-                      <ul>
-                        <li><strong>Basic Simulator Mechanics:</strong>
-                          <ul>
-                            <li>Loads calls from a file.</li>
-                            <li>Creates elevators with the appropriate types and quantities.</li>
-                            <li>Assigns calls to elevators using the Scheduler.</li>
-                            <li>Simulates elevator movement floor by floor.</li>
-                          </ul>
-                        </li>
-                        <li><strong>Correct Call Assignment:</strong>
-                          <ul>
-                            <li>Calls are assigned based on the behavior of the selected algorithm (Simple or Complex).</li>
-                            <li>Elevators only service calls they are allowed to, based on elevator type.</li>
-                          </ul>
-                        </li>
-                        <li><strong>Elevator Call Processing:</strong>
-                          <ul>
-                            <li>Elevators pick up passengers at the call’s start floor.</li>
-                            <li>Drop them off at their destination floor.</li>
-                            <li>Track the completion status of each call.</li>
-                          </ul>
-                        </li>
-                        <li><strong>Correct Termination Condition:</strong>
-                          <ul>
-                            <li>Simulation ends only when all calls are completed and elevators are back on the ground floor.</li>
-                          </ul>
-                        </li>
-                        <li><strong>Output Accuracy:</strong>
-                          <ul>
-                            <li>Accurately displays each elevator’s status (floor, direction, passengers).</li>
-                            <li>Shows unassigned calls and clearly reflects completion of all simulation rounds.</li>
-                          </ul>
-                        </li>
-                      </ul>
-              
-                      <p><strong>Implementation Details (My Contribution)</strong></p>
-                      <ul>
-                        <li>Implemented the core <code>Simulator</code> class that manages the entire simulation loop and termination logic.</li>
-                        <li>Wrote unit tests using JUnit and Mockito to verify elevator logic and functionality.</li>
-                        <li>Created the <code>ComplexScheduler</code> and <code>SimpleScheduler</code> to handle call dispatching.</li>
-                        <li>Developed the <code>Building</code> class to manage elevator configurations.</li>
-                        <li>Worked on the <code>Call</code> class that stores elevator request information.</li>
-                        <li>Engaged in paired programming and used GitHub for version control and collaboration.</li>
-                      </ul>
-              
-                      <p><strong>What I Learned:</strong></p>
-                      <p>
-                        This project improved my understanding of test-driven development, modular Java design, and collaborative Git workflows.
-                        I became more confident writing and testing large-scale simulations.
-                      </p>
-              
-                      <p>
-                        Check out the full project on GitHub:  
-                        <a href="https://github.com/usd-comp-305/project-03-elevator-sim">https://github.com/usd-comp-305/project-03-elevator-sim</a>
-                      </p>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
               
     </section>
 
