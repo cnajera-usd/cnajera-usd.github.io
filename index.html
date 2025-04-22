@@ -204,88 +204,95 @@
               <div class="container mt-5">
                 <h4>Elevator Simulation Project</h4>
               
-                <!-- 1. Picture/Video -->
-                <!-- 1. Picture/Video -->
-<div style="display: flex; gap: 15px; flex-wrap: wrap;">
-  <img src="images/BuildingClass1.jpg" alt="Building Class Code" style="width: 30%; min-width: 250px;" />
-  <img src="images/BuildingClass2.jpg" alt="Building Class Code Pt.2" style="width: 30%; min-width: 250px;" />
-  <img src="images/BuildingClass3.jpg" alt="Building Class Code Pt.3" style="width: 30%; min-width: 250px;" />
-</div>
-
+                <!-- FLEX WRAPPER FOR IMAGE + TEXT -->
+                <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
               
-                <p><strong>Project Title:</strong> Elevator Simulator</p>
+                  <!-- LEFT COLUMN: IMAGES -->
+                  <div style="flex: 1; min-width: 250px;">
+                    <img src="images/BuildingClass1.jpg" alt="Building Class Code" style="width: 100%; margin-bottom: 15px;" />
+                    <img src="images/BuildingClass2.jpg" alt="Building Class Code Pt.2" style="width: 100%; margin-bottom: 15px;" />
+                    <img src="images/BuildingClass3.jpg" alt="Building Class Code Pt.3" style="width: 100%;" />
+                  </div>
               
-                <p>
-                  This project involves building an elevator simulation system that models multiple types of elevators servicing a building with varying rules. The different types of elevators that were implemented were Standard, Freight, Penthouse, and Express, each has its own movement and call behavior. 
-                  The simulation operates through rounds, where a scheduler assigns elevator calls, and elevators move one floor per round based on their logic.
-                </p>
+                  <!-- RIGHT COLUMN: TEXT -->
+                  <div style="flex: 2; min-width: 300px;">
+                    <p><strong>Project Title:</strong> Elevator Simulator</p>
+                    <p>
+                      This project involves building an elevator simulation system that models multiple types of elevators servicing a building with varying rules.
+                      The different types of elevators that were implemented were Standard, Freight, Penthouse, and Express, each has its own movement and call behavior.
+                      The simulation operates through rounds, where a scheduler assigns elevator calls, and elevators move one floor per round based on their logic.
+                    </p>
               
-                <p><strong>Functional Requirements:</strong></p>
-<ul>
-  <li><strong>Basic Simulator Mechanics:</strong>
-    <ul>
-      <li>Loads calls from a file.</li>
-      <li>Creates elevators with the appropriate types and quantities.</li>
-      <li>Assigns calls to elevators using the Scheduler.</li>
-      <li>Simulates elevator movement floor by floor.</li>
-    </ul>
-  </li>
-
-  <li><strong>Correct Call Assignment:</strong>
-    <ul>
-      <li>Calls are assigned based on the behavior of the selected algorithm (Simple or Complex).</li>
-      <li>Elevators only service calls they are allowed to, based on elevator type.</li>
-    </ul>
-  </li>
-
-  <li><strong>Elevator Call Processing:</strong>
-    <ul>
-      <li>Elevators pick up passengers at the call’s start floor.</li>
-      <li>Drop them off at their destination floor.</li>
-      <li>Track the completion status of each call.</li>
-    </ul>
-  </li>
-
-  <li><strong>Correct Termination Condition:</strong>
-    <ul>
-      <li>Simulation ends only when all calls are completed and elevators are back on the ground floor.</li>
-    </ul>
-  </li>
-
-  <li><strong>Output Accuracy:</strong>
-    <ul>
-      <li>Accurately displays each elevator’s status (floor, direction, passengers).</li>
-      <li>Shows unassigned calls and clearly reflects completion of all simulation rounds.</li>
-    </ul>
-  </li>
-</ul>
-
-                <p><strong>Design Decisions:</strong></p>
-                <p>
-                  We designed the project using object-oriented principles like inheritance and abstraction to represent different elevator types. Test-driven development was used throughout the process to ensure functionality. Each elevator type was given a specific behavior model, making the simulation flexible and scalable.
-                </p>
+                    <p><strong>Functional Requirements:</strong></p>
+                    <ul>
+                      <li><strong>Basic Simulator Mechanics:</strong>
+                        <ul>
+                          <li>Loads calls from a file.</li>
+                          <li>Creates elevators with the appropriate types and quantities.</li>
+                          <li>Assigns calls to elevators using the Scheduler.</li>
+                          <li>Simulates elevator movement floor by floor.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Correct Call Assignment:</strong>
+                        <ul>
+                          <li>Calls are assigned based on the behavior of the selected algorithm (Simple or Complex).</li>
+                          <li>Elevators only service calls they are allowed to, based on elevator type.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Elevator Call Processing:</strong>
+                        <ul>
+                          <li>Elevators pick up passengers at the call’s start floor.</li>
+                          <li>Drop them off at their destination floor.</li>
+                          <li>Track the completion status of each call.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Correct Termination Condition:</strong>
+                        <ul>
+                          <li>Simulation ends only when all calls are completed and elevators are back on the ground floor.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Output Accuracy:</strong>
+                        <ul>
+                          <li>Accurately displays each elevator’s status (floor, direction, passengers).</li>
+                          <li>Shows unassigned calls and clearly reflects completion of all simulation rounds.</li>
+                        </ul>
+                      </li>
+                    </ul>
               
-                <p><strong>My Contributions:</strong></p>
-                <ul>
-                  <li>Implemented the core `Simulator` class that manages the entire simulation loop and termination logic.</li>
-                  <li>Wrote unit tests using JUnit and Mockito to verify that elevators moved correctly and handled calls properly, along with tests for all classes that I worked on.</li>
-                  <li>Worked on the `Scheduler` classes, more specific ComplexScheduler and SimpleScheduler, to dispatch calls to elevators based on their type and current state.</li>
-                  <li>Wrote `Building` class, manages configurations of elevators in the building.</li>
-                  <li>Engaged in paired programming with a partner using GitHub for version control and branching strategies.</li>
-                  <l>Wrote `Call` classes that stores information about elevator calls.</l>
-                </ul>
+                    <p><strong>Design Decisions:</strong></p>
+                    <p>
+                      We designed the project using object-oriented principles like inheritance and abstraction to represent different elevator types.
+                      Test-driven development was used throughout the process to ensure functionality. Each elevator type was given a specific behavior model,
+                      making the simulation flexible and scalable.
+                    </p>
               
-                <p><strong>What I Learned:</strong></p>
-                <p>
-                  This project taught me how to apply test-driven development in a large codebase and improved my ability to write testable Java code. It also strengthened my collaboration and debugging skills, especially when integrating with my partner's code in real-time using Git.
-                </p>
+                    <p><strong>My Contributions:</strong></p>
+                    <ul>
+                      <li>Implemented the core <code>Simulator</code> class that manages the entire simulation loop and termination logic.</li>
+                      <li>Wrote unit tests using JUnit and Mockito to verify that elevators moved correctly and handled calls properly, along with tests for all classes that I worked on.</li>
+                      <li>Worked on the <code>Scheduler</code> classes, more specifically <code>ComplexScheduler</code> and <code>SimpleScheduler</code>, to dispatch calls to elevators based on their type and current state.</li>
+                      <li>Wrote the <code>Building</code> class, which manages configurations of elevators in the building.</li>
+                      <li>Engaged in paired programming with a partner using GitHub for version control and branching strategies.</li>
+                      <li>Wrote the <code>Call</code> class that stores information about elevator calls.</li>
+                    </ul>
               
-                <p>
-                  Check out the GitHub repository:  
-                  <a href="https://github.com/usd-comp-305/project-03-elevator-sim">https://github.com/usd-comp-305/project-03-elevator-sim</a>
-                </p>
+                    <p><strong>What I Learned:</strong></p>
+                    <p>
+                      This project taught me how to apply test-driven development in a large codebase and improved my ability to write testable Java code.
+                      It also strengthened my collaboration and debugging skills, especially when integrating with my partner's code in real-time using Git.
+                    </p>
+              
+                    <p>
+                      Check out the GitHub repository:  
+                      <a href="https://github.com/usd-comp-305/project-03-elevator-sim">https://github.com/usd-comp-305/project-03-elevator-sim</a>
+                    </p>
+                  </div>
+              
+                </div> 
               </div>
               
+                
+    
 
 
 
