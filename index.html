@@ -197,7 +197,93 @@
                 <a href="https://github.com/usd-comp-305/project-01-jack-and-chris/tree/main "></a>
 
               </p>
-                            
+                
+
+              <hr />
+              <hr />
+              <div class="container mt-5">
+                <h4>Elevator Simulation Project</h4>
+              
+                <!-- 1. Picture/Video -->
+                <p><em>(Insert a screenshot or video demo of the elevator interface here.)</em></p>
+              
+                <p><strong>Project Title:</strong> Elevator Simulator</p>
+              
+                <p>
+                  This project involves building an elevator simulation system that models multiple types of elevators servicing a building with varying rules. The different types of elevators that were implemented were Standard, Freight, Penthouse, and Express, each has its own movement and call behavior. 
+                  The simulation operates through rounds, where a scheduler assigns elevator calls, and elevators move one floor per round based on their logic.
+                </p>
+              
+                <p><strong>Functional Requirements:</strong></p>
+<ul>
+  <li><strong>Basic Simulator Mechanics:</strong>
+    <ul>
+      <li>Loads calls from a file.</li>
+      <li>Creates elevators with the appropriate types and quantities.</li>
+      <li>Assigns calls to elevators using the Scheduler.</li>
+      <li>Simulates elevator movement floor by floor.</li>
+    </ul>
+  </li>
+
+  <li><strong>Correct Call Assignment:</strong>
+    <ul>
+      <li>Calls are assigned based on the behavior of the selected algorithm (Simple or Complex).</li>
+      <li>Elevators only service calls they are allowed to, based on elevator type.</li>
+    </ul>
+  </li>
+
+  <li><strong>Elevator Call Processing:</strong>
+    <ul>
+      <li>Elevators pick up passengers at the call’s start floor.</li>
+      <li>Drop them off at their destination floor.</li>
+      <li>Track the completion status of each call.</li>
+    </ul>
+  </li>
+
+  <li><strong>Correct Termination Condition:</strong>
+    <ul>
+      <li>Simulation ends only when all calls are completed and elevators are back on the ground floor.</li>
+    </ul>
+  </li>
+
+  <li><strong>Output Accuracy:</strong>
+    <ul>
+      <li>Accurately displays each elevator’s status (floor, direction, passengers).</li>
+      <li>Shows unassigned calls and clearly reflects completion of all simulation rounds.</li>
+    </ul>
+  </li>
+</ul>
+
+              
+                <!-- 5. Design Choices -->
+                <p><strong>Design Decisions:</strong></p>
+                <p>
+                  We designed the project using object-oriented principles like inheritance and abstraction to represent different elevator types. Test-driven development was used throughout the process to ensure functionality. Each elevator type was given a specific behavior model, making the simulation flexible and scalable.
+                </p>
+              
+                <!-- 6. Implementation Contributions -->
+                <p><strong>My Contributions:</strong></p>
+                <ul>
+                  <li>Implemented the core `Simulator` class that manages the entire simulation loop and termination logic.</li>
+                  <li>Wrote unit tests using JUnit and Mockito to verify that elevators moved correctly and handled calls properly.</li>
+                  <li>Worked on the `Scheduler` classes, more specific ComplexScheduler and SimpleScheduler, to dispatch calls to elevators based on their type and current state.</li>
+                  <li>Engaged in agile programming with a partner using GitHub for version control and branching strategies.</li>
+                  <l>I wo</l>
+                </ul>
+              
+                <!-- 7. Personal Learning -->
+                <p><strong>What I Learned:</strong></p>
+                <p>
+                  This project taught me how to apply test-driven development in a large codebase and improved my ability to write modular, testable Java code. It also strengthened my collaboration and debugging skills, especially when integrating with my partner's code in real-time using Git.
+                </p>
+              
+                <p>
+                  Check out the GitHub repository:  
+                  <a href="https://github.com/usd-comp-305/project-03-elevator-sim">https://github.com/usd-comp-305/project-03-elevator-sim</a>
+                </p>
+              </div>
+              
+
 
 
             </div>
